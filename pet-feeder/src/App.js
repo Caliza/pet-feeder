@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Clock from './Clock';
+import Pannel from './Pannel';
 
 class App extends Component {
 
