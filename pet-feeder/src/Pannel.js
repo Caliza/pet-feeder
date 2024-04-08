@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 function Pannel({}) {
 
     return (
-        <div></div>
+        <div><p>Petta</p></div>
     )
 }
 
-export default Pannel
+export default Pannel;

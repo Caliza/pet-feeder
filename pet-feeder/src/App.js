@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Clock from './Clock';
 import Pannel from './Pannel';
+import { render } from '@testing-library/react';
 
 class App extends Component {
 
@@ -40,10 +41,17 @@ class App extends Component {
   render(){
     const {secondRatio, minuteRatio, hourRatio} = this.state
     return (
-      <Clock secondRatio={secondRatio} minuteRatio={minuteRatio} hourRatio={hourRatio}/>
+     <div> <Clock secondRatio={secondRatio} minuteRatio={minuteRatio} hourRatio={hourRatio}/></div>
+     
     );
+   // <div><Pannel/></div>
+    
   }
- 
+
+   //render(){return (
+    //<Pannel/>
+  //);}
+   
 }
 
 
