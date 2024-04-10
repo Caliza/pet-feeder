@@ -3,7 +3,9 @@ import React from 'react';
 function Pannel({}) {
 
     return (
-        <div><p>Petta</p></div>
+        <div className='card'>
+            <h2 className='card-header'>Pet Feeder</h2>
+        </div>
     )
 }
 
