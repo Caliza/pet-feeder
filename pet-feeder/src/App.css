@@ -154,8 +154,13 @@ body {
   height: 200px;
   margin-top: 30px;
 }
+.control {
+  text-align: center;
+}
 .controls {
   display: inline-block;
+  text-align: center;
+  margin: 0px 10px 0px 10px
 }
 h2.card-header {
   text-align: center;

@@ -6,9 +6,21 @@ function Pannel({}) {
         
         <div className='card'>
             <h2 className='card-header'>Pet Feeder</h2>
-            <div>
-            <p className='controls'>Set Time</p>
-            <p className='controls'>Set Time</p>
+            <div className='control'>
+            <label className='controls'>Set Time</label>
+            <label className='controls'>Set Time</label>
+            <label className='controls'>Set Time</label>
+            <label className='controls'>Set Time</label>
+            <label className='controls'>Set Time</label>
+            <label className='controls'>Set Time</label>
+            </div>
+            <div>            
+            <input type="time" id="appt"  /> 
+            <input type="time" id="appt"  />  
+            <input type="time" id="appt"  />  
+            <input type="time" id="appt"  />  
+            <input type="time" id="appt"  />  
+            <input type="time" id="appt"  />    
             </div>
         </div>
         
