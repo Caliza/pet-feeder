@@ -15,12 +15,12 @@ function Pannel({}) {
             <label className='controls'>Set Time</label>
             </div>
             <div>            
-            <input type="time" id="appt"  /> 
-            <input type="time" id="appt"  />  
-            <input type="time" id="appt"  />  
-            <input type="time" id="appt"  />  
-            <input type="time" id="appt"  />  
-            <input type="time" id="appt"  />    
+            <input className='time-input' type="time" id="appt"  /> 
+            <input className='time-input'type="time" id="appt"  />  
+            <input className='time-input'type="time" id="appt"  />  
+            <input className='time-input'type="time" id="appt"  />  
+            <input className='time-input'type="time" id="appt"  />  
+            <input className='time-input'type="time" id="appt"  />    
             </div>
         </div>
         
