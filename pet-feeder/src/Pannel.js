@@ -23,12 +23,12 @@ function Pannel({}) {
             <input className='time-input'type="time" id="appt"  />    
             </div>
             <div>
-                <button>Set Feed</button>
-                <button>Set Feed</button>
-                <button>Set Feed</button>
-                <button>Set Feed</button>
-                <button>Set Feed</button>
-                <button>Set Feed</button>
+                <button className='feed-button'>Set Feed</button>
+                <button className='feed-button'>Set Feed</button>
+                <button className='feed-button'>Set Feed</button>
+                <button className='feed-button'>Set Feed</button>
+                <button className='feed-button'>Set Feed</button>
+                <button className='feed-button'>Set Feed</button>
             </div>
         </div>
         

@@ -172,3 +172,9 @@ h2.card-header {
   margin: 5px 5px 0px 5px;
   width: 95px
 }
+.feed-button{
+  display: inline-block;
+  text-align: center;
+  margin: 5px 5px 0px 5px;
+  width: 95px
+}
