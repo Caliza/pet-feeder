@@ -1,7 +1,20 @@
 import React, { useState } from 'react';
 
 function Pannel({}) {
-const [newItem, setNewItem] = useState("")  
+const [newItem, setNewItem] = useState("") 
+const [todos, setTodos] =useState([]) 
+
+function handleSubmit(e) {
+    e.preventDefault()
+
+    setTodos(currentTodos => {
+        return [
+            ...currentTodos,
+            { id: crypto.randomUUID(), title: newItem, completed: false},
+        ]
+
+    })
+}
 
     return (
         
