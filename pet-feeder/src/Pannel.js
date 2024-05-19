@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Pannel({}) {
+const [newItem, setNewItem] = useState("")  
 
     return (
         
@@ -15,7 +16,7 @@ function Pannel({}) {
             <label className='controls'>6th Feed</label>
             </div>
             <div>            
-            <input className='time-input' type="time" id="appt"  /> 
+            <input className='time-input' value={newItem} onChange={e => setNewItem(e.target.value)} type="time" id="appt"  /> 
             <input className='time-input'type="time" id="appt"  />  
             <input className='time-input'type="time" id="appt"  />  
             <input className='time-input'type="time" id="appt"  />  
