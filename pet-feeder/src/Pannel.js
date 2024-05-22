@@ -27,6 +27,17 @@ function handleSubmit(e) {
             <div>
                 <button className='feed-button'>Set Feed</button>
             </div>
+        <ul className="list">
+            {todos.map(todos => {
+                return (<li key={todos.id}>
+                    <label>
+                    <input type="checkbox" checked={todos.completed}/>
+                    {todos.title}
+                    </label>
+                </li>
+                )
+            })}
+        </ul>    
         </div>
         
     )
