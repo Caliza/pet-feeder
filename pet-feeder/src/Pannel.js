@@ -14,6 +14,7 @@ function handleSubmit(e) {
         ]
 
     })
+    setNewItem("")
 }
 
     return (
