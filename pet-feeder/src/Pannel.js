@@ -26,6 +26,11 @@ function toggleTodo(id, completed) {
         })
     })
 }
+function deleteTodo(id) {
+    setTodos(currentTodos => {
+        return currentTodos.filter(todo => todo.id !== id)
+    })
+}
 
     return (
         
@@ -39,12 +44,21 @@ function toggleTodo(id, completed) {
                 <button className='feed-button'>Set Feed</button>
             </div>
         <ul className="list">
-            {todos.map(todos => {
-                return (<li key={todos.id}>
+            {todos.map(todo => {
+                return (<li key={todo.id}>
                     <label>
-                    <input type="checkbox" checked={todos.completed}/>
-                    {todos.title}
+                        <input 
+                        type="checkbox" 
+                        checked={todo.completed}
+                        onChange={e => toggleTodo(todo.id, e.target.checked)}
+                        />
+                        {todo.title}
                     </label>
+                    <button 
+                        onClick={() =>deleteTodo(todo.id)}className="btn btn-danger"
+                    >
+                        Delete
+                    </button>
                 </li>
                 )
             })}
