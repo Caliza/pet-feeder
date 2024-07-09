@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NewFeedForm } from './NewFeedForm';
 
 function Pannel({}) {
 const [newItem, setNewItem] = useState("") 
@@ -33,7 +34,8 @@ function deleteTodo(id) {
 }
 
     return (
-        
+        <>
+        <div><NewFeedForm/></div>
         <div className='card'>
             <h2 className='card-header'>Pet Feeder</h2>
             
@@ -65,7 +67,7 @@ function deleteTodo(id) {
             })}
         </ul>    
         </div>
-        
+        </>
     )
 }
 
