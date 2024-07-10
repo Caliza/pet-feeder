@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function NewFeedForm({ onSubmit}) {
+export function NewFeedForm({ onSubmit }) {
     const [newItem, setNewItem] = useState("")
 
     function handleSubmit(e) {
@@ -24,7 +24,7 @@ export function NewFeedForm({ onSubmit}) {
                 id="item"
                 />
             </div>
-            <button>Set Time</button>
+            <button className="btn">Set Time</button>
         </form>
     )
 }
