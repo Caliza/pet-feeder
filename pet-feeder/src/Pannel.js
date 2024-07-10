@@ -35,16 +35,14 @@ function deleteTodo(id) {
 
     return (
         <>
-        <div><NewFeedForm/></div>
+        <div></div>
         <div className='card'>
-            <h2 className='card-header'>Pet Feeder 2</h2>
+            <h2 className='card-header'><NewFeedForm/></h2>
             
             <div>            
             <input className='time-input' value={newItem} onChange={e => setNewItem(e.target.value)} type="time" id="appt"  />  
             </div>
-            <div>
-                <button className='feed-button'>Set Feed</button>
-            </div>
+            
         <ul className="list">
             {todos.length === 0 && "No Todos"}
             {todos.map(todo => {

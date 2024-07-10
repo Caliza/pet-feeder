@@ -17,7 +17,14 @@ export function NewFeedForm({ onSubmit}) {
         className="new-item-form">
             <div className="form-row">
                 <label htmlFor="item">Set Feed</label>
+                <input
+                value={newItem}
+                onChange={e => setNewItem(e.target.value)}
+                type="text"
+                id="item"
+                />
             </div>
+            <button>Set Time</button>
         </form>
     )
 }
