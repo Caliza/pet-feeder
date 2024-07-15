@@ -1,18 +1,18 @@
 import React from 'react'
 import Pannel from './Pannel';
 
-function Clock({hourRatio, minuteRatio, secondRatio}) {
+function Clock({ hourRatio, minuteRatio, secondRatio }) {
 
   console.log(secondRatio)
 
 
-    return (
-      <>  
+  return (
+    <>
       <div className="clock">
-        <div className="hand hour" style={{transform: `translate(-50%) rotate(${hourRatio * 360}deg)`}}></div>
-        <div className="hand minute"style={{transform: `translate(-50%) rotate(${minuteRatio * 360}deg)`}}  ></div>
-        <div className="hand second"style={{transform: `translate(-50%) rotate(${secondRatio * 360}deg)`}}  ></div>
-        
+        <div className="hand hour" style={{ transform: `translate(-50%) rotate(${hourRatio * 360}deg)` }}></div>
+        <div className="hand minute" style={{ transform: `translate(-50%) rotate(${minuteRatio * 360}deg)` }}  ></div>
+        <div className="hand second" style={{ transform: `translate(-50%) rotate(${secondRatio * 360}deg)` }}  ></div>
+
         <div className="number number1"><div>1</div></div>
         <div className="number number2"><div>2</div></div>
         <div className="number number3"><div>3</div></div>
@@ -25,15 +25,15 @@ function Clock({hourRatio, minuteRatio, secondRatio}) {
         <div className="number number10"><div>10</div></div>
         <div className="number number11"><div>11</div></div>
         <div className="number number12"><div>12</div></div>
-    </div>
-    <div><Pannel/></div>
+      </div>
+      <div><Pannel /></div>
     </>
 
-    )
-    
-   //function Pannel(){
+  )
+
+  //function Pannel(){
   //<div><Pannel/></div>
-//} 
+  //} 
 
 }
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import './App.css';
+import './Pannel.css'
 import Clock from './Clock';
 import Pannel from './Pannel';
 import { render } from '@testing-library/react';
