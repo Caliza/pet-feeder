@@ -20,7 +20,7 @@ export function NewFeedForm({ onSubmit }) {
                 <input
                 value={newItem}
                 onChange={e => setNewItem(e.target.value)}
-                type="text"
+                type="time"
                 id="item"
                 />
             </div>
