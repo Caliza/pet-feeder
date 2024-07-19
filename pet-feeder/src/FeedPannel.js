@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { NewFeedForm } from './NewFeedForm';
 import { FeedList } from './FeedList';
 
-function Pannel() {
+function FeedPannel() {
     const [todos, setTodos] = useState(() => {
         const localValue = localStorage.getItem("ITEMS")
         if (localValue == null) return []
@@ -50,4 +50,4 @@ function Pannel() {
     )
 }
 
-export default Pannel;
+export default FeedPannel;

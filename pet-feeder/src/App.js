@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import './Pannel.css'
+import './FeedPannel.css'
 import Clock from './Clock';
-import Pannel from './Pannel';
+import Pannel from './FeedPannel';
 import { render } from '@testing-library/react';
 
 class App extends Component {

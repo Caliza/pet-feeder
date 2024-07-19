@@ -1,5 +1,5 @@
 import React from 'react'
-import Pannel from './Pannel';
+import FeedPannel from './FeedPannel';
 
 function Clock({ hourRatio, minuteRatio, secondRatio }) {
 
@@ -26,7 +26,7 @@ function Clock({ hourRatio, minuteRatio, secondRatio }) {
         <div className="number number11"><div>11</div></div>
         <div className="number number12"><div>12</div></div>
       </div>
-      <div><Pannel /></div>
+      <div><FeedPannel /></div>
     </>
 
   )

@@ -4,7 +4,7 @@ export function FeedList({ todos, toggleTodo, deleteTodo }) {
     return (
         <ul className="list myList">
             {todos.length === 0 && "No Feed Time"}
-            {todos.map(todo => {
+            {todos.slice(0,4).map(todo => {
                 return (
                     <FeedItem
                         {...todo}
