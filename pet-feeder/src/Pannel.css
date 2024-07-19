@@ -139,3 +139,6 @@
     background: hsl(200, 100%, 30%);
   }
   
+  .myList li:nth-of-type(1n+5) {
+    display: none;
+  }

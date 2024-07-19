@@ -2,7 +2,7 @@ import { FeedItem } from "./FeedItem";
 
 export function FeedList({ todos, toggleTodo, deleteTodo }) {
     return (
-        <ul className="list">
+        <ul className="list myList">
             {todos.length === 0 && "No Feed Time"}
             {todos.map(todo => {
                 return (
