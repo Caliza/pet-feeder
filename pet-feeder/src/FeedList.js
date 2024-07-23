@@ -13,8 +13,9 @@ export function FeedList({ todos, toggleTodo, deleteTodo }) {
                         deleteTodo={deleteTodo}
                     />
                 )
-            })}
+            }).reverse()} 
         </ul>
+        
     )
 
 }
