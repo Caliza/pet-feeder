@@ -16,11 +16,12 @@ export function NewServingForm({onSubmit}) {
         <form onSubmit={handleSubmit}
         className="new-item-form">
             <div className="form-row">
-                <label htmlFor="item">Servings</label>
                 <input
                 value={newItem}
                 onChange={e => setNewItem(e.target.value)}
-                type="text"
+                type="number"
+                min="0"
+                max="5"
                 id="item"
                 />
             </div>

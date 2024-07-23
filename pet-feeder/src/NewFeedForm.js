@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NewServingForm } from "./NewServingForm";
 
 export function NewFeedForm({ onSubmit }) {
     const [newItem, setNewItem] = useState("")
@@ -24,6 +25,7 @@ export function NewFeedForm({ onSubmit }) {
                 id="item"
                 />
             </div>
+            <NewServingForm/>
             <button className="btn">Set Time</button>
         </form>
     )
