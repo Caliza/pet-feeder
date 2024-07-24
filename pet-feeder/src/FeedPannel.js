@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { NewFeedForm } from './NewFeedForm';
 import { FeedList } from './FeedList';
+import { NewServingForm } from './NewServingForm';
 
 function FeedPannel() {
     const [todos, setTodos] = useState(() => {
@@ -15,11 +16,31 @@ function FeedPannel() {
         localStorage.setItem("ITEMS", JSON.stringify(todos))
     }, [todos])
 
+    const [servings, setServings] = useState(() => {
+        const localValue = localStorage.getItem("ITEMS")
+        if (localValue == null) return []
+
+        return JSON.parse(localValue)
+    })
+
+    useEffect(() => {
+        localStorage.setItem("ITEMS", JSON.stringify(servings))
+    }, [servings])
+
     function addTodo(title) {
         setTodos(currentTodos => {
             return [
                 ...currentTodos,
                 { id: crypto.randomUUID(), title, completed: false },
+            ]
+        })
+    }
+
+    function addServing(title) {
+        setServings(currentServing => {
+            return [
+                ...currentServing,
+                { id: crypto.randomUUID(), title, completed: false}
             ]
         })
     }
@@ -44,6 +65,7 @@ function FeedPannel() {
     return (
         <>
             <NewFeedForm onSubmit={addTodo} />
+            <NewServingForm onSubmit={addServing}/>
             <h1 className='header'>Feed Times</h1>
             <FeedList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
         </>
