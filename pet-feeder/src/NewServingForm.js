@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 export function NewServingForm({onSubmit}) {
-    const [newItem, setNewItem] = useState("")
+    const [newQuantity, setNewQuantity] = useState("")
 
     function handleSubmit(e) {
         e.preventDefault();
-        if (newItem === "") return
+        if (newQuantity === "") return
 
-        onSubmit(newItem)
+        onSubmit(newQuantity)
 
-        setNewItem("")
+        setNewQuantity("")
     }
 
     return (
@@ -17,14 +17,15 @@ export function NewServingForm({onSubmit}) {
         className="new-item-form">
             <div className="form-row">
                 <input
-                value={newItem}
-                onChange={e => setNewItem(e.target.value)}
+                value={newQuantity}
+                onChange={e => setNewQuantity(e.target.value)}
                 type="number"
                 min="0"
                 max="5"
                 id="item"
                 />
             </div>
+            <button className="btn">Set Serve</button>
         </form>
     )
     
