@@ -65,7 +65,6 @@ function FeedPannel() {
     return (
         <>
             <NewFeedForm onSubmit={addTodo} />
-           
             <h1 className='header'>Feed Times</h1>
             <FeedList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
         </>
