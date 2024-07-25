@@ -1,4 +1,4 @@
-export function FeedItem({ completed, id, title, toggleTodo, deleteTodo }) {
+export function FeedItem({ completed, id, title, total, toggleTodo, deleteTodo }) {
     return (
         <li>
             <label>
@@ -7,8 +7,8 @@ export function FeedItem({ completed, id, title, toggleTodo, deleteTodo }) {
                 checked={completed}
                 onChange={e => toggleTodo(id, e.target.checked)}
                 />
-                {title}
-            </label>
+                {[title, total]} 
+            </label>    
             <button onClick={()=> deleteTodo(id)} className="btn btn-dange">
                 Delete Feed
             </button>
